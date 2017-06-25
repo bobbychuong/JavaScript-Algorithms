@@ -10,10 +10,20 @@
 //   }
 // }
 // Write a program that would print the sum of all the odd numbers from 1 to 5000
-var sum = 0;
-for(var x=1;x<5000;x++){
-  if(x%2==1){       // check the odds
-    sum += x     // sum = sum + x
+// var sum = 0;
+// for(var x=1;x<5000;x++){
+//   if(x%2==1){       // check the odds
+//     sum += x     // sum = sum + x
+//   }
+// }
+// console.log(sum);
+// Assignment: Array With Odd Numbers
+// Write a program that creates an array 'Y' that contains all the odd numbers between 1 to 255. When the program is done, 'y'
+// should have the value of [1, 3, 5, 7, ... 255]. You are allowed to use .push method)
+var y = [];
+for (var x=1;x<=256;x++){
+  if(x%2==1){
+    y.push(x);
+    console.log(x);
   }
 }
-console.log(sum);
