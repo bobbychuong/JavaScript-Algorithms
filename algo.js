@@ -52,15 +52,42 @@
 //   console.log(y);
 // }
 
-function greaterThanY(y){
-    var arr = [1,3,5,7];
-    var newarr =[]
-    var count = 0;
-    for(var x=0;x<arr.length;x++){
-        if(arr[x] > y){
-          count++;
-        }
-    }
-    console.log(count);
+// function greaterThanY(y){
+//     var arr = [1,3,5,7];
+//     var count = 0;
+//     for(var x=0;x<arr.length;x++){
+//         if(arr[x] > y){
+//           count++;
+//         }
+//     }
+//     console.log(count);
+// }
+// greaterThanY(1);
+
+// Given an Array [1,5,10,-2]
+// Algo that squares each value in the array.
+// Ex. [1,25,100,4]
+// Cannot use pre-built build function
+// Ex. x[i] = x[i] * x[i]
+
+// Given an Array [1,5,10,-2]
+// Algo that squares each value in the array.
+// Ex. [1,25,100,4]
+// Cannot use pre-built build function
+// Ex. x[i] = x[i] * x[i]
+
+// Given an Array [1,5,10,-2]
+// Algo that squares each value in the array.
+// Ex. [1,25,100,4]
+// Cannot use pre-built build function
+// Ex. x[i] = x[i] * x[i]
+
+var arr = [1,5,10,-2,4,8,3];
+for(var i=0;i<arr.length;i++){      // for(var i=3;3<arr.length;3++)
+    arr[i] = arr[i] * arr[i];
+                                    //arr[3] = -2 * -2           ==> arr[3] = 4
 }
-greaterThanY(6);
+ console.log(arr);
+
+
+                                    //console.log()            ==> 1,25,100, 4
