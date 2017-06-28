@@ -82,12 +82,25 @@
 // Cannot use pre-built build function
 // Ex. x[i] = x[i] * x[i]
 
-var arr = [1,5,10,-2,4,8,3];
-for(var i=0;i<arr.length;i++){      // for(var i=3;3<arr.length;3++)
-    arr[i] = arr[i] * arr[i];
-                                    //arr[3] = -2 * -2           ==> arr[3] = 4
+// var arr = [1,5,10,-2,4,8,3];
+// for(var i=0;i<arr.length;i++){      // for(var i=3;3<arr.length;3++)
+//     arr[i] = arr[i] * arr[i];
+//                                     //arr[3] = -2 * -2           ==> arr[3] = 4
+// }
+//  console.log(arr);
+
+
+//console.log()            ==> 1,25,100, 4
+// Eliminate Negative Numbers
+// Given an array x = [1,5,10-2]
+// Algo that replaces negative numbers with the value of 0
+// x should have no negative numbers ex. [1,5,10,0]
+
+var arr = [1, 5, 10, -2,-4,-100];
+for (var x = 0; x<arr.length; x++)
+{
+  if (arr[x] < 0){            // if(arr[0] < 0)  ==> if(1 < 0 )
+      arr[x] = arr[x] - arr[x];             // arr[0] == 0
+  }
 }
- console.log(arr);
-
-
-                                    //console.log()            ==> 1,25,100, 4
+console.log(arr);
