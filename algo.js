@@ -17,6 +17,7 @@
 //   }
 // }
 // console.log(sum);
+
 // Iterating through the array
 // var x = [1,3,5,7,9,13];
 // for (var i=0;i<x.length;i++){
@@ -96,11 +97,34 @@
 // Algo that replaces negative numbers with the value of 0
 // x should have no negative numbers ex. [1,5,10,0]
 
-var arr = [1, 5, 10, -2,-4,-100];
-for (var x = 0; x<arr.length; x++)
-{
-  if (arr[x] < 0){            // if(arr[0] < 0)  ==> if(1 < 0 )
-      arr[x] = arr[x] - arr[x];             // arr[0] == 0
+// var arr = [1, 5, 10, -2,-4,-100];
+// for (var x = 0; x<arr.length; x++)
+// {
+//   if (arr[x] < 0){            // if(arr[0] < 0)  ==> if(1 < 0 )
+//       arr[x] = arr[x] - arr[x];             // arr[0] == 0
+//   }
+// }
+// console.log(arr);
+
+// Max, Min, Average
+// array x = [1,5,10,-2]
+arr = [1,5,10,-2];
+var max = arr[0];
+var min = arr[0];
+var sum = 0;
+
+for(var i=0;i<arr.length;i++){      //for(var i=2;2<arr.length;2++)
+  sum = sum + arr[i];
+
+  if(arr[i] > max){
+    max = arr[i];
   }
+  if(arr[i] < min){
+    min = arr[i];
+  }
+  var avg = sum/arr.length;
 }
-console.log(arr);
+console.log("max is ", max);
+console.log("min is ", min);
+console.log("sum is", sum);
+console.log("average is", avg);
