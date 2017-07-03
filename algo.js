@@ -108,23 +108,38 @@
 
 // Max, Min, Average
 // array x = [1,5,10,-2]
-arr = [1,5,10,-2];
-var max = arr[0];
-var min = arr[0];
-var sum = 0;
+// arr = [1,5,10,-2];
+// var max = arr[0];
+// var min = arr[0];
+// var sum = 0;
+//
+// for(var i=0;i<arr.length;i++){      //for(var i=2;2<arr.length;2++)
+//   sum = sum + arr[i];
+//
+//   if(arr[i] > max){
+//     max = arr[i];
+//   }
+//   if(arr[i] < min){
+//     min = arr[i];
+//   }
+//   var avg = sum/arr.length;
+// }
+// console.log("max is ", max);
+// console.log("min is ", min);
+// console.log("sum is", sum);
+// console.log("average is", avg);
 
-for(var i=0;i<arr.length;i++){      //for(var i=2;2<arr.length;2++)
-  sum = sum + arr[i];
+// var arr = [1,5,10,7,-2];
+// for(var i=0;i<arr.length;i++){
+//   arr.shift();
+//   arr.push(0);
+//   console.log(arr);
+// }
 
-  if(arr[i] > max){
-    max = arr[i];
-  }
-  if(arr[i] < min){
-    min = arr[i];
-  }
-  var avg = sum/arr.length;
-}
-console.log("max is ", max);
-console.log("min is ", min);
-console.log("sum is", sum);
-console.log("average is", avg);
+// Swapping two values
+// var arr = [2,3,5,7,6];
+// var first = arr[0];
+// var last = arr[arr.length - 1];
+// arr[0] = arr[arr.length - 1]
+// arr[arr.length - 1] = first
+// console.log(arr);
