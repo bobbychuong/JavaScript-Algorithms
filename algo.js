@@ -159,10 +159,21 @@
 // console.log(x);
 
 // Reversing 2
-var x = [-3,5,1,3,2,10];
-for(var i=0;i<3;i++){               // for(var i=0)
-  var temp = x[i];                  // temp = x[i]
-  x[i] = x[x.length-1-i];           // x[i] = x[x.length-1-i]
-  x[x.length-1-i] = temp            // x[x.length-1-i] = temp
+// var x = [-3,5,1,3,2,10];
+// for(var i=0;i<3;i++){               // for(var i=0)
+//   var temp = x[i];                  // temp = x[i]
+//   x[i] = x[x.length-1-i];           // x[i] = x[x.length-1-i]
+//   x[x.length-1-i] = temp            // x[x.length-1-i] = temp
+// }
+// console.log(x);
+
+// Assignment: Random Array
+// Create an array X and fill the array with 10 values, each value being a random integer between 0 to 100.  For example when your program is done, X could be something like this: [35, 15, 3, 39, 53, 93, 25, 39, 59, 21].
+
+var arr = [];
+for(var i=0;i<11;i++){
+    var random_int = Math.floor(Math.random()*101);
+    arr.push(random_int);
 }
-console.log(x);
+// console.log(Math.floor(random));
+console.log(arr);
