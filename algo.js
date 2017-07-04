@@ -143,3 +143,26 @@
 // arr[0] = arr[arr.length - 1]
 // arr[arr.length - 1] = first
 // console.log(arr);
+
+// Reversing
+// x = [3,5,1,3,2,10];
+// var temp = x[0];
+// var temp1 = x[1];
+// var temp2 = x[2];
+// x[0] = x[x.length-1];
+// x[x.length-1] = temp;
+//
+// x[1] = x[4];            // x[1] = 2
+// x[4] =temp1;            // x[4] = 5
+// x[2] = x[3];            // x[2] = 3
+// x[3] = temp2;           // x[3] = 1
+// console.log(x);
+
+// Reversing 2
+var x = [-3,5,1,3,2,10];
+for(var i=0;i<3;i++){               // for(var i=0)
+  var temp = x[i];                  // temp = x[i]
+  x[i] = x[x.length-1-i];           // x[i] = x[x.length-1-i]
+  x[x.length-1-i] = temp            // x[x.length-1-i] = temp
+}
+console.log(x);
